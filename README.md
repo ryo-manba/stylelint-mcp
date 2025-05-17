@@ -15,7 +15,7 @@ Note: You must have stylelint installed either globally or locally in your proje
 The server is started automatically by your editor’s MCP client, but you can run it manually for testing:
 
 ```shell
-npx stylelint-mcp-server
+npx stylelint-mcp
 ```
 
 ## Editor setup examples
@@ -30,7 +30,7 @@ Add `.vscode/mcp.json`:
     "Stylelint": {
       "type": "stdio",
       "command": "npx",
-      "args": ["stylelint-mcp-server@latest"]
+      "args": ["stylelint-mcp@latest"]
     }
   }
 }
@@ -45,7 +45,7 @@ Add `.cursor/mcp.json`:
   "mcpServers": {
     "stylelint": {
       "command": "npx",
-      "args": ["stylelint-mcp-server@latest"],
+      "args": ["stylelint-mcp@latest"],
       "env": {}
     }
   }
