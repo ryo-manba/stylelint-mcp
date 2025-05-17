@@ -1,12 +1,16 @@
 {
-  "name": "stylelint-mcp-server",
+  "name": "stylelint-mcp",
   "version": "0.0.0",
-  "description": "A MCP server for Stylelint",
+  "description": "MCP server for Stylelint",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ryo-manba/stylelint-mcp-server"
+    "url": "https://github.com/ryo-manba/stylelint-mcp"
   },
   "license": "MIT",
+  "keywords": [
+    "stylelint",
+    "mcp"
+  ],
   "author": "ryo-manba",
   "type": "module",
   "files": [
@@ -16,7 +20,7 @@
     "package.json"
   ],
   "bin": {
-    "stylelint-mcp-server": "./dist/mcp-cli.js"
+    "stylelint-mcp": "./dist/mcp-cli.js"
   },
   "scripts": {
     "build": "tsup",
