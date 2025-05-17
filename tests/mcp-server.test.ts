@@ -3,7 +3,7 @@ import path from "node:path";
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
 import { fileURLToPath } from "node:url";
-import { describe, it, expect, beforeEach, assert } from "vitest";
+import { describe, it, expect, beforeEach } from "vitest";
 
 const dirname = path.dirname(fileURLToPath(import.meta.url));
 const validFilePath = path.join(dirname, "fixtures", "valid.css");
@@ -152,13 +152,6 @@ describe("MCP Server", () => {
             filePaths: [nonExistentFilePath],
           },
         });
-
-        const results = rawResults
-          .slice(1, rawResults.length - 1)
-          .map(({ type, text }) => ({
-            type,
-            text: JSON.parse(text),
-          }));
 
         expect(rawResults.length).toBe(1);
         expect(rawResults[0].type).toBe("text");

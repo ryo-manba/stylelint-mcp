@@ -10,10 +10,6 @@ function disconnect() {
   process.exitCode = 0;
 }
 
-//-----------------------------------------------------------------------------
-// Main
-//-----------------------------------------------------------------------------
-
 await mcpServer.connect(new StdioServerTransport());
 
 // Note: do not use console.log() because stdout is part of the server transport
