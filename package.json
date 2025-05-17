@@ -16,7 +16,7 @@
     "package.json"
   ],
   "bin": {
-    "stylelint-mcp-server": "./dist/index.js"
+    "stylelint-mcp-server": "./dist/mcp-cli.js"
   },
   "scripts": {
     "build": "tsup",
