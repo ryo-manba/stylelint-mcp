@@ -25,7 +25,8 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "test": "vitest",
+    "test": "vitest --run",
+    "test:watch": "vitest --watch",
     "lint": "eslint .",
     "prepare": "pnpm build",
     "prepublishOnly": "pnpm lint && pnpm test"
